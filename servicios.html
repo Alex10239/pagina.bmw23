@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelos - BMW</title>
+  <link rel="stylesheet" href="estilo.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      color: #000000; /* Gris para todo el texto */
+      background-color:  #2b2d42; /* Gris claro para el fondo */
+    }
+    header {
+      background-color:  #2b2d42; /* Gris para el fondo del encabezado */
+      padding: 20px;
+      text-align: center;
+      color: white; /* Texto blanco en el encabezado */
+      position: relative;
+    }
+    header h1 {
+      font-size: 36px;
+    }
+    header img {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 60px; /* Tamaño del logo */
+    }
+    nav {
+      width: 200px;
+      float: left;
+      background-color:  #2b2d42; /* Gris para el fondo del menú */
+    }
+    .menu {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      height: 100vh;
+    }
+    .menu li {
+      position: relative;
+    }
+    .menu li a {
+      display: block;
+      color: white;
+      padding: 12px;
+      text-decoration: none;
+    }
+    .menu li a:hover,
+    .menu li a.active {
+      background-color:  #2b2d42; /* Gris oscuro cuando el enlace está activo o al pasar el mouse */
+    }
+    .submenu {
+      display: none;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      background-color:  #2b2d42; /* Gris intermedio para los submenús */
+    }
+    .menu li:hover .submenu {
+      display: block;
+    }
+    .submenu li a {
+      padding-left: 20px;
+    }
+    main {
+      margin-left: 200px;
+      padding: 20px;
+      background-color: white; /* Fondo blanco para el contenido principal */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color:  #2b2d42; /* Gris oscuro para el fondo del pie de página */
+      text-align: center;
+      padding: 10px;
+      color: white; /* Texto blanco en el pie de página */
+    }
+    footer p {
+      font-size: 14px;
+    }
+    .contenido-modelos {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #f4f4f4; /* Fondo gris claro */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .contenido-modelos h2 {
+      font-size: 28px;
+      color: #2b2d42;
+    }
+    .contenido-modelos p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.6;
+    }
+    .subformulario {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .subformulario h3 {
+      font-size: 24px;
+      color: #2b2d42;
+      margin-bottom: 20px;
+    }
+    .subformulario label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 16px;
+      color: #333;
+    }
+    .subformulario select,
+    .subformulario textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    .subformulario textarea {
+      resize: vertical;
+    }
+    .subformulario button {
+      padding: 10px;
+      background-color: #2b2d42;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .subformulario button:hover {
+      background-color: #1f2331;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/2560px-BMW.svg.png" alt="BMW Logo">
+    <h1>BMW</h1>
+    <p>Innovación y lujo automotriz de clase mundial</p>
+  </header>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li>
+        <a href="nosotros.html">Nosotros</a>
+        <ul class="submenu">
+          <li><a href="mision.html">Misión</a></li>
+          <li><a href="vision.html">Visión</a></li>
+          <li><a href="valores.html">Valores</a></li>
+        </ul>
+      </li>
+      <li><a href="modelos.html" class="active">Modelos</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="contenido-modelos">
+      <h2>Modelos BMW</h2>
+      <p>Descubre nuestra amplia gama de modelos diseñados para satisfacer todas tus expectativas de lujo, rendimiento y tecnología avanzada. Aquí encontrarás autos que destacan por su calidad e innovación.</p>
+      <p>Selecciona un modelo y experimenta la conducción premium que solo BMW puede ofrecer.</p>
+
+      <h3>Formulario de Servicios para Modelos</h3>
+      <div class="subformulario">
+        <h3>Solicita más información sobre servicios para tu modelo</h3>
+        <form action="#" method="POST">
+          <label for="modelo">Selecciona el modelo</label>
+          <select id="modelo" name="modelo">
+            <option value="serie3">BMW Serie 3</option>
+            <option value="serie5">BMW Serie 5</option>
+            <option value="serie7">BMW Serie 7</option>
+            <option value="x5">BMW X5</option>
+            <option value="i3">BMW i3</option>
+            <option value="f82">BMW F82</option>
+          </select>
+
+          <label for="servicio">Selecciona el servicio</label>
+          <select id="servicio" name="servicio">
+            <option value="mantenimiento">Mantenimiento</option>
+            <option value="diagnostico">Diagnóstico Avanzado</option>
+            <option value="pruebas">Pruebas de Manejo</option>
+            <option value="garantia">Programas de Garantía</option>
+          </select>
+
+          <label for="comentarios">Comentarios adicionales</label>
+          <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe tus comentarios o preguntas aquí"></textarea>
+
+          <button type="submit">Enviar solicitud</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 BMW. Todos los derechos reservados. | Reservado por Miguel</p>
+  </footer>
+</body>
+</html>

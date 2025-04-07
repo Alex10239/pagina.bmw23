@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valores | BMW</title>
+  <link rel="stylesheet" href="estilo.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      color: #000000; /* Gris para todo el texto */
+      background-color:  #2b2d42; /* Gris claro para el fondo */
+    }
+    header {
+      background-color:  #2b2d42; /* Gris para el fondo del encabezado */
+      padding: 20px;
+      text-align: center;
+      color: white; /* Texto blanco en el encabezado */
+      position: relative;
+    }
+    header h1 {
+      font-size: 36px;
+    }
+    header img {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 60px; /* Tamaño del logo */
+    }
+    nav {
+      width: 200px;
+      float: left;
+      background-color:  #2b2d42; /* Gris para el fondo del menú */
+    }
+    .menu {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      height: 100vh;
+    }
+    .menu li {
+      position: relative;
+    }
+    .menu li a {
+      display: block;
+      color: white;
+      padding: 12px;
+      text-decoration: none;
+    }
+    .menu li a:hover,
+    .menu li a.active {
+      background-color:  #2b2d42; /* Gris oscuro cuando el enlace está activo o al pasar el mouse */
+    }
+    .submenu {
+      display: none;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      background-color:  #2b2d42; /* Gris intermedio para los submenús */
+    }
+    .menu li:hover .submenu {
+      display: block;
+    }
+    .submenu li a {
+      padding-left: 20px;
+    }
+    main {
+      margin-left: 200px;
+      padding: 20px;
+      background-color: white; /* Fondo blanco para el contenido principal */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color:  #2b2d42; /* Gris oscuro para el fondo del pie de página */
+      text-align: center;
+      padding: 10px;
+      color: white; /* Texto blanco en el pie de página */
+    }
+    footer p {
+      font-size: 14px;
+    }
+    .contenido-valores {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #f4f4f4; /* Fondo gris claro */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .contenido-valores h2 {
+      font-size: 28px;
+      color: #2b2d42;
+    }
+    .contenido-valores p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.6;
+    }
+    .valores-lista {
+      margin-top: 20px;
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    .valores-lista li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/2560px-BMW.svg.png" alt="BMW Logo">
+    <h1>Valores de BMW</h1>
+  </header>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="Nosotros.html">Nosotros</a>
+        <ul class="submenu">
+          <li><a href="Mision.html">Misión</a></li>
+          <li><a href="Vision.html">Visión</a></li>
+          <li><a href="Valores.html">Valores</a></li>
+        </ul>
+      </li>
+      <li><a href="modelos.html">Modelos</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="Contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="contenido-valores">
+      <h2>Nuetros Valores</h2>
+      <p>En BMW, nuestros valores representan el núcleo de nuestra identidad. Cada decisión, cada vehículo, y cada interacción está guiada por los principios que forman la base de nuestra cultura corporativa. Estos valores son fundamentales para mantener la confianza y lealtad de nuestros clientes, empleados y socios. Los valores de BMW son:</p>
+      
+      <ul class="valores-lista">
+        <li><strong>Innovación:</strong> Buscamos constantemente innovar en todos los aspectos de nuestro negocio, desde el diseño hasta la tecnología, para ofrecer productos de vanguardia que transformen la experiencia de conducción.</li>
+        <li><strong>Calidad:</strong> La excelencia y la perfección están en el corazón de todo lo que hacemos. Cada vehículo BMW es un testimonio de nuestra dedicación a la calidad.</li>
+        <li><strong>Sostenibilidad:</strong> Estamos comprometidos con la creación de productos y soluciones que no solo sean buenos para nuestros clientes, sino también para el planeta. La sostenibilidad es un pilar clave de nuestra estrategia empresarial.</li>
+        <li><strong>Pasión:</strong> La pasión por la conducción y la emoción de la innovación son el motor que impulsa a nuestra empresa. Queremos que nuestros clientes disfruten de una experiencia única detrás del volante.</li>
+        <li><strong>Responsabilidad:</strong> Asumimos nuestra responsabilidad con la sociedad, el medio ambiente y la comunidad global. Trabajamos para hacer una diferencia positiva en todos los ámbitos de nuestra actividad.</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 BMW. Todos los derechos reservados. | Reservado por Miguel</p>
+  </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMW - Innovación Automotriz</title>
+  <link rel="stylesheet" href="estilo.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      color: #000000; /* Gris para todo el texto */
+      background-color:  #2b2d42; /* Gris claro para el fondo */
+    }
+    header {
+      background-color:  #2b2d42; /* Gris para el fondo del encabezado */
+      padding: 20px;
+      text-align: center;
+      color: white; /* Texto blanco en el encabezado */
+      position: relative;
+    }
+    header h1 {
+      font-size: 36px;
+    }
+    header img {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 60px; /* Tamaño del logo */
+    }
+    nav {
+      width: 200px;
+      float: left;
+      background-color:  #2b2d42; /* Gris para el fondo del menú */
+    }
+    .menu {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      height: 100vh;
+    }
+    .menu li {
+      position: relative;
+    }
+    .menu li a {
+      display: block;
+      color: white;
+      padding: 12px;
+      text-decoration: none;
+    }
+    .menu li a:hover,
+    .menu li a.active {
+      background-color:  #2b2d42; /* Gris oscuro cuando el enlace está activo o al pasar el mouse */
+    }
+    .submenu {
+      display: none;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      background-color:  #2b2d42; /* Gris intermedio para los submenús */
+    }
+    .menu li:hover .submenu {
+      display: block;
+    }
+    .submenu li a {
+      padding-left: 20px;
+    }
+    main {
+      margin-left: 200px;
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .contenido-principal {
+      flex: 2;
+      padding: 20px;
+      background-color: white; /* Fondo blanco para el contenido principal */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+    .contenido-bmw {
+      flex: 1;
+      background-color: #f4f4f4; /* Fondo gris claro */
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+    .contenido-bmw img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    footer {
+      background-color:  #2b2d42; /* Gris oscuro para el fondo del pie de página */
+      text-align: center;
+      padding: 10px;
+      color: white; /* Texto blanco en el pie de página */
+    }
+    footer p {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/2560px-BMW.svg.png" alt="Logo de BMW">
+    <h1>BMW</h1>
+    <p>Innovación y lujo automotriz de clase mundial</p>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li>
+          <a href="Nosotros.html" class="active">Nosotros</a>
+          <ul class="submenu">
+            <li><a href="Mision.html">Misión</a></li>
+            <li><a href="Vision.html">Visión</a></li>
+            <li><a href="Valores.html">Valores</a></li>
+          </ul>
+        </li>
+        <li><a href="modelos.html">Modelos</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="contenido-principal">
+      <section id="inicio">
+        <h2>Bienvenido a BMW</h2>
+        <p>BMW es sinónimo de innovación, rendimiento y lujo. Con más de 100 años de historia, seguimos marcando tendencias en la industria automotriz con tecnología avanzada y diseño de vanguardia. Desde su fundación en 1916, BMW ha sido pionera en la fabricación de vehículos de alto rendimiento, ofreciendo una experiencia única de conducción a nuestros clientes.</p>
+        <br>
+        <h3>Historia y Legado</h3>
+        <p>La historia de BMW comenzó con la fabricación de motores de aviación durante la Primera Guerra Mundial. Desde entonces, la empresa ha evolucionado, adaptándose a las necesidades del mercado y superando desafíos tecnológicos para convertirse en un referente mundial en la industria automotriz. A lo largo de las décadas, hemos consolidado nuestra posición con vehículos que combinan lujo, estilo y potencia.</p>
+        <br>
+        <h3>Innovación y Tecnología</h3>
+        <p>En BMW, la innovación es el corazón de todo lo que hacemos. Desde nuestros motores de alto rendimiento hasta nuestros vehículos eléctricos de última generación, nos dedicamos a crear experiencias de conducción incomparables. Modelos como el BMW i3 y el BMW i8 representan nuestro compromiso con la sostenibilidad y la movilidad del futuro.</p>
+        <br>
+        <h3>Compromiso con la Sostenibilidad</h3>
+        <p>BMW ha sido un líder en la transición hacia vehículos más sostenibles y ecológicos. Con nuestra serie de autos eléctricos y de bajo impacto ambiental, seguimos adelante con el objetivo de reducir nuestra huella de carbono, sin comprometer el rendimiento que nos caracteriza. Estamos comprometidos con la creación de un futuro más verde y eficiente.</p>
+        <br>
+        <h3>Rendimiento Inigualable</h3>
+        <p>Cuando se trata de rendimiento, BMW es sinónimo de excelencia. Nuestros vehículos están diseñados para ofrecer una experiencia de conducción superior, con motores potentes, suspensión avanzada y un enfoque en la precisión. El BMW M Series, por ejemplo, ofrece una potencia y maniobrabilidad excepcionales que convierten cada viaje en una experiencia emocionante.</p>
+        <br>
+        <h3>Diseño de Vanguardia</h3>
+        <p>El diseño de un BMW no solo refleja belleza, sino también funcionalidad. Cada línea, cada curva está diseñada para maximizar la aerodinámica y el confort, sin dejar de lado la estética y el lujo. Desde el icónico BMW Serie 7 hasta el BMW Z4, nuestros vehículos son un testimonio de nuestra dedicación al diseño automotriz.</p>
+      </section>
+    </div>
+    <aside class="contenido-bmw">
+      <h3>BMW: Innovación en Movimiento</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/2560px-BMW.svg.png" alt="Logo de BMW">
+      <p>BMW es una de las marcas líderes en la industria automotriz, reconocida mundialmente por su ingeniería de precisión, diseño elegante y rendimiento excepcional. Ideal para los amantes de la velocidad, la tecnología y el lujo.</p>
+    </aside>
+  </main>
+  <footer>
+    <p>&copy; 2025 BMW. Todos los derechos reservados. | Reservado por Miguel</p>
+  </footer>
+</body>
+</html>
+

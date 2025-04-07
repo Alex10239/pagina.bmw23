@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelos de BMW</title>
+  <link rel="stylesheet" href="estilo.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      color: #000000; /* Gris para todo el texto */
+      background-color:  #2b2d42; /* Gris claro para el fondo */
+    }
+    header {
+      background-color:  #2b2d42; /* Gris para el fondo del encabezado */
+      padding: 20px;
+      text-align: center;
+      color: white; /* Texto blanco en el encabezado */
+      position: relative;
+    }
+    header h1 {
+      font-size: 36px;
+    }
+    header img {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 60px; /* Tamaño del logo */
+    }
+    nav {
+      width: 200px;
+      float: left;
+      background-color:  #2b2d42; /* Gris para el fondo del menú */
+    }
+    .menu {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      height: 100vh;
+    }
+    .menu li {
+      position: relative;
+    }
+    .menu li a {
+      display: block;
+      color: white;
+      padding: 12px;
+      text-decoration: none;
+    }
+    .menu li a:hover,
+    .menu li a.active {
+      background-color:  #2b2d42; /* Gris oscuro cuando el enlace está activo o al pasar el mouse */
+    }
+    .submenu {
+      display: none;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      background-color:  #2b2d42; /* Gris intermedio para los submenús */
+    }
+    .menu li:hover .submenu {
+      display: block;
+    }
+    .submenu li a {
+      padding-left: 20px;
+    }
+    main {
+      margin-left: 200px;
+      padding: 20px;
+      background-color: white; /* Fondo blanco para el contenido principal */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-wrap: wrap;
+    }
+    footer {
+      background-color:  #2b2d42; /* Gris oscuro para el fondo del pie de página */
+      text-align: center;
+      padding: 10px;
+      color: white; /* Texto blanco en el pie de página */
+    }
+    footer p {
+      font-size: 14px;
+    }
+    .contenido-principal {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .modelo {
+      width: 30%;
+      margin: 15px;
+      text-align: center;
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .modelo img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .modelo h3 {
+      color: #2b2d42;
+      font-size: 24px;
+    }
+    .modelo p {
+      font-size: 16px;
+      color: #333;
+    }
+    .contenido-bmw {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+    .detalles {
+      width: 45%;
+      margin: 15px;
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .detalles h3 {
+      color: #2b2d42;
+      font-size: 24px;
+    }
+    .detalles p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/2560px-BMW.svg.png" alt="BMW Logo">
+    <h1>Valores de BMW</h1>
+  </header>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="Nosotros.html">Nosotros</a>
+        <ul class="submenu">
+          <li><a href="Mision.html">Misión</a></li>
+          <li><a href="Vision.html">Visión</a></li>
+          <li><a href="Valores.html">Valores</a></li>
+        </ul>
+      </li>
+      <li><a href="modelos.html">Modelos</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="Contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="contenido-principal">
+      <div class="modelo">
+        <img src="bmw.serie3.jpeg" alt="BMW Serie 3">
+        <h3>BMW Serie 3</h3>
+        <p>Precio: $45,000</p>
+      </div>
+      <div class="modelo">
+        <img src="BMW.X5.jpeg" alt="BMW X5">
+        <h3>BMW X5</h3>
+        <p>Precio: $65,000</p>
+      </div>
+      <div class="modelo">
+        <img src="bmw.i8.jpeg" alt="BMW i8">
+        <h3>BMW i8</h3>
+        <p>Precio: $140,000</p>
+      </div>
+      <div class="modelo">
+        <img src="bmw.m3.jpeg" alt="BMW M3">
+        <h3>BMW M3</h3>
+        <p>Precio: $70,000</p>
+      </div>
+      <div class="modelo">
+        <img src="bmw.z4.jpeg" alt="BMW Z4">
+        <h3>BMW Z4</h3>
+        <p>Precio: $55,000</p>
+      </div>
+      <div class="modelo">
+        <img src="bmw.f82.jpeg" alt="BMW F82">
+        <h3>BMW f82</h3>
+        <p>Precio: $52,000</p>
+      </div>
+    </div>
+
+    <div class="contenido-bmw">
+      <div class="detalles">
+        <h3>BMW Serie 3</h3>
+        <p><strong>Motor:</strong> 2.0L turboalimentado, 255 HP</p>
+        <p><strong>Consumo:</strong> 10 km/l</p>
+        <p><strong>Transmisión:</strong> Automática de 8 velocidades</p>
+        <p><strong>Precio:</strong> $45,000</p>
+        <p><strong>Descripción:</strong> La Serie 3 es conocida por su balance entre confort, tecnología y rendimiento, ideal para aquellos que buscan elegancia y dinamismo en cada viaje.</p>
+      </div>
+      <div class="detalles">
+        <h3>BMW X5</h3>
+        <p><strong>Motor:</strong> 3.0L turboalimentado, 335 HP</p>
+        <p><strong>Consumo:</strong> 9.5 km/l</p>
+        <p><strong>Transmisión:</strong> Automática de 8 velocidades</p>
+        <p><strong>Precio:</strong> $65,000</p>
+        <p><strong>Descripción:</strong> El BMW X5 combina lujo con capacidad todoterreno. Con un motor potente y tecnología avanzada, es perfecto para quienes desean comodidad y versatilidad.</p>
+      </div>
+      <div class="detalles">
+        <h3>BMW i8</h3>
+        <p><strong>Motor:</strong> Híbrido, 369 HP</p>
+        <p><strong>Consumo:</strong> 14 km/l (promedio)</p>
+        <p><strong>Transmisión:</strong> Automática de 6 velocidades</p>
+        <p><strong>Precio:</strong> $140,000</p>
+        <p><strong>Descripción:</strong> El BMW i8 es un deportivo híbrido que combina tecnología futurista y un diseño impresionante, ofreciendo un rendimiento excepcional y eficiencia energética.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 BMW. Todos los derechos reservados. | Reservado por Miguel</p>
+  </footer>
+</body>
+</html>
